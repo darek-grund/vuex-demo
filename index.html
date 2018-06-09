@@ -13,12 +13,19 @@
       <div class="columns">
         <div class="column has-text-centered">
           <strong>Notes</strong>
+          <ul>
+            <li v-for="note in notes">{{ note }}</li>
+          </ul>
         </div>
         <div class="column has-text-centered">
           <strong>Timestamp</strong>
+          <ul>
+            <li v-for="timestamp in timestamps">{{ timestamp }}</li>
+          </ul>
         </div>
       </div>
       <input-component></input-component>
+      <note-count-component></note-count-component>
     </div>
   </div>
 
